@@ -4,7 +4,7 @@ An interactive **C** program for recording, displaying, and managing classroom t
 It supports up to **35 students** and **10 tests**, provides PIN‑protected supervisor features,  
 and demonstrates structured C programming and input validation.
 
-> **Note:** Data is stored in memory only; this is an educational project, not a production-grade gradebook.
+> **Note:** Data is stored in memory only; this is an educational project
 
 ---
 
@@ -90,7 +90,7 @@ Test 1 marks locked.
 └── README.md
 ```
 
-[Full Project Report (PDF)](student_management_mark.pdf)
+[Full Project Report (PDF)](Student_Marks_Management/docs/student_management_mark.pdf)
 
 The PDF includes:
 * Program design and array layout
