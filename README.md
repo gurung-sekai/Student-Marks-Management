@@ -86,18 +86,9 @@ Test 1 marks locked.
 
 ```
 ├── student_marks_improved.c   # Complete, improved C source code
-├── student_management_mark.pdf # Full project report with design, testing, and evaluation
 └── README.md
 ```
 
-[Full Project Report (PDF)](Student_Marks_Management/docs/student_management_mark.pdf)
-
-The PDF includes:
-* Program design and array layout
-* Screen layout mock‑ups
-* Full annotated source listing
-* Proof of testing with screenshots
-* Written evaluation and suggested improvements
 
 ---
 
@@ -119,4 +110,3 @@ The PDF includes:
 ---
 
 Developed by **Pritam Gurung**  
-University of Nottingham – Computer Science
