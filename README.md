@@ -91,7 +91,7 @@ Test 1 marks locked.
 
 *The PDF report provides design rationale, screenshots of the program in action, testing evidence, and a written evaluation.*
 
-[Full Project Report (PDF)](ActionOnWeight-Patient-System/hospitalproject.pdf)
+[Full Project Report (PDF)](Student-Marks-Management/ActionOnWeight-Patient-System/hospitalproject.pdf)
 
 ---
 
