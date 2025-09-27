@@ -85,6 +85,13 @@ Supervisor Mode requires a PIN (default **3750**) and offers options to add stud
 
 ---
 
+## Documentation
+
+Full design report with screenshots, program design, and evaluation:
+
+[Project Report (PDF)](Student%20Mark%20managment/student_management_mark.pdf)
+
+
 ---
 
 ## File Structure
