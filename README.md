@@ -1,40 +1,42 @@
 # Student Marks Management (C)
 
-A console-based application for teachers to record, display, and manage student marks for multiple tests.  
-Built entirely in **C**, it demonstrates structured programming, file/console I/O, and a menu-driven user interface.
+An interactive **C** program for recording, displaying, and managing classroom test marks.  
+It supports up to **35 students** and **10 tests**, provides PIN‑protected supervisor features,  
+and demonstrates structured C programming and input validation.
+
+> **Note:** Data is stored in memory only; this is an educational project, not a production-grade gradebook.
 
 ---
 
 ## Features
 
-* **Dynamic Class Setup**
-  * Up to **35 students**, each name up to **50 characters**.
-  * Up to **10 tests** per student.
+* **Dynamic Class Setup**  
+  * Prompt for number of students (1–35) and names (up to 50 chars).
+  * Record marks for up to 10 tests per student.
 
-* **Main Menu**
-  * **Enter Marks** – input marks (0–100) for a selected test. Teachers can review and correct marks before locking them.
-  * **Display Marks** – print a table of marks for all tests entered so far with per-student averages.
-  * **Supervisor Mode** – PIN-protected menu to:
-    * Change the supervisor PIN.
-    * Add a new student.
-    * Correct a student’s name.
-    * Change an individual student’s mark (even after a test is locked).
+* **Teacher Menu**  
+  * **Enter Marks** – input marks 0–100, with a correction pass before locking each test.  
+  * **Display Marks** – view a table of entered marks and running averages.
 
-* **Input Validation & Locking**
-  * Marks validated to 0–100.
-  * Once confirmed, a test’s marks are locked to prevent accidental edits by teachers.
+* **Supervisor Mode** (PIN‑protected, default `3750`)  
+  * Change the supervisor PIN.  
+  * Add a student (up to the 35‑student limit).  
+  * Change an individual mark (even if locked).  
+  * Correct a student name.
+
+* **Data Validation & Locking**  
+  * Marks validated to 0–100.  
+  * Once confirmed, a test’s marks are locked for teachers (but editable by the supervisor).
 
 ---
 
 ## Build
 
-Use any C11-compatible compiler (e.g. GCC, Clang):
+Use any C11‑compatible compiler (e.g. GCC, Clang):
 
 ```bash
 gcc -std=c11 -O2 -Wall -Wextra -o student_marks student_marks_improved.c
 ```
-
-This creates an executable named `student_marks`.
 
 ---
 
@@ -44,9 +46,9 @@ This creates an executable named `student_marks`.
 ./student_marks
 ```
 
-1. Enter the number of students (1–35) and their names.
-2. Use the menu to enter marks, display marks, or enter Supervisor Mode.
-3. Supervisor Mode requires a **4-digit PIN** (default `3750`).
+1. Enter the number of students and their names.  
+2. Use the menu to enter marks, display marks, or access supervisor features.  
+3. Enter the supervisor PIN (default **3750**) to unlock management functions.
 
 ---
 
@@ -66,7 +68,6 @@ Main Menu
  3) Supervisor mode
  4) Exit program
 Choose: 1
-Enter test number (1..10): 1
 
 Entering marks for Test 1 (0 if no mark):
   Alice: 90
@@ -84,34 +85,38 @@ Test 1 marks locked.
 ## Repository Structure
 
 ```
-├── student_marks_improved.c   # Complete C source code
-├── student_management_mark.pdf # Full project design, screenshots, and evaluation
+├── student_marks_improved.c   # Complete, improved C source code
+├── student_management_mark.pdf # Full project report with design, testing, and evaluation
 └── README.md
 ```
 
-*The PDF report provides design rationale, screenshots of the program in action, testing evidence, and a written evaluation.*
+[Full Project Report (PDF)](student_management_mark.pdf)
 
-[Full Project Report (PDF)](Student-Marks-Management/ActionOnWeight-Patient-System/hospitalproject.pdf)
+The PDF includes:
+* Program design and array layout
+* Screen layout mock‑ups
+* Full annotated source listing
+* Proof of testing with screenshots
+* Written evaluation and suggested improvements
 
 ---
 
 ## Skills Demonstrated
 
-* **C Programming** – modular design, arrays, functions, and input validation.
-* **Interactive Console UI** – menu-driven flow with real-time feedback.
-* **Access Control** – PIN-protected supervisor features.
-* **Software Engineering** – documented design, testing, and evaluation.
+* **C Programming** – modular functions, arrays, input validation, and interactive menus.
+* **Access Control** – PIN‑protected supervisor features.
+* **Software Engineering** – clear documentation, testing evidence, and maintainable structure.
 
 ---
 
 ## Future Enhancements
 
-* Persist data to disk (e.g. CSV or SQLite database).
-* Replace global variables with encapsulated data structures.
-* Expand input validation and error handling.
-* Add unit tests and a Makefile or CI workflow.
-* Improve security (hashed PIN, better memory management).
+* Persistent storage (CSV or database) to retain data across runs.
+* Stronger security (hashed PIN, encryption of saved data).
+* Expanded input validation and error handling.
+* Unit tests and a Makefile or CI workflow for automated builds.
 
 ---
 
 Developed by **Pritam Gurung**  
+University of Nottingham – Computer Science
